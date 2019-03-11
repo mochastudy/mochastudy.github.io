@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lesson 1 - 서버 언어(PHP)와 클라이언트 언어(HTML)
+title: Lesson 1 - 서버 언어(PHP)와 클라이언트 언어(HTML) 
 description: >
 image: 
 categories: study

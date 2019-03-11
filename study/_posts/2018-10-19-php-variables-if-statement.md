@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lesson 3 - PHP 기초 문법 (변수와 if문)
+title: Lesson 3 - PHP 기초 문법 (변수와 if문) 
 categories: study
 ---
 

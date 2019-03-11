@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lesson 4 - PHP 기초 문법 (Form, POST & GET)
+title: Lesson 4 - PHP 기초 문법 (Form, POST & GET) 
 categories: study
 ---
 

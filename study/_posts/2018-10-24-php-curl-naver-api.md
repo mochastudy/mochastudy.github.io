@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lesson 5 - PHP cURL & 네이버 API 이용 방법 (+ 배열과 foreach)
+title: Lesson 5 - PHP cURL & 네이버 API 이용 방법 (+ 배열과 foreach) 
 categories: study
 ---
 
