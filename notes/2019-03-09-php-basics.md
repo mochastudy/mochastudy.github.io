@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 190309: PHP Basics
+title: 190309 - PHP Basics
 description: >
 image: 
 categories: notes
