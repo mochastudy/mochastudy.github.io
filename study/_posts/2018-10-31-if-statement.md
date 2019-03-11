@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lesson 7 - 
+title: Lesson 7 - 웹페이지 처리 구조와 If문 구조
 categories: study
 ---
 
