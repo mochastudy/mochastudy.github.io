@@ -24,13 +24,13 @@ categories: study
 ![API 기본 정보](http://mocha.dothome.co.kr/images/9-1.png)
 * XML 타입으로 결과 값을 받을 것인가?
 * JSON 타입으로 결과 값을 받을 것인가?
-
+<br/><br/>
 ![요청 변수](http://mocha.dothome.co.kr/images/9-2.png)
 * query(쿼리)는 '문자열(string, 스트링)' 형태이며 필수이다. 쿼리문을 요청할 때는 문자 인코딩을 해야 함 (ex. urlencode).
 * display(디스플레이)의 타입은 '정수(integer)'로, 보내는데 필수는 아님. 생략해도 문제 없다. 기본 출력 갯수는 10개.
 * start(스타트)는 '정수(integer)' 타입이며 필수가 아님. 기본값은 1 (1페이지를 뜻함).
 * sort(솔트)는 '문자열(string, 스트링)으로 보내야 한다. 기본은 sim(유사도) 정렬 방식인데, date(날짜)를 선택할 수 있음.
-
+<br/><br/>
 ![호출](http://mocha.dothome.co.kr/images/9-3.png)
 * cURL 타입으로 호출하고 요청하려면 헤드에 내가 앞서 발급받은 API KEY를 입력해야 함
 
