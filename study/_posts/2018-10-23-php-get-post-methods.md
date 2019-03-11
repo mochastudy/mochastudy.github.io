@@ -18,14 +18,6 @@ categories: study
 </form>
 ~~~
 
-직접 실행해보기
-<form action="" method="POST">
-<input type="text" name="mocha">
-<input type="submit" value="서버야 받아라">
-</form>
-                
-**결과**: <?php echo $_POST['mocha']; ?>
-
 ### form에 입력한 값 화면에 출력하기
 ~~~php
 <form action="" method="POST">
