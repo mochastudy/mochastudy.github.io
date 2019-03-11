@@ -29,6 +29,7 @@ echo </pre>';
 <br/><br/>
 
 ![가공한 데이터](http://mocha.dothome.co.kr/images/10-4.png)
+
 가공한 XML 배열을 pre 태그를 이용해서 보기 좋게 출력한 모습
 
 ## 배열 출력하기
