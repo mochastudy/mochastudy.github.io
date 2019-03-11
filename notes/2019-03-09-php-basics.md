@@ -3,7 +3,7 @@ layout: post
 title: 190309: PHP Basics
 description: >
 image: 
-categories: study
+categories: notes
 ---
 
 ## PHP Installation (Mac OS X)
