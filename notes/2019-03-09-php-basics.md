@@ -6,6 +6,8 @@ image:
 categories: notes
 ---
 
+PHP Basics
+
 ## PHP Installation (Mac OS X)
 There are various ways to install PHP on a Mac. PHP is already installed on my Mac, but if I need to install it in the future, simply install Homebrew, search for PHP and install the latest version. After installation, I can use 'php -v' to check the installed version of PHP. 
 
