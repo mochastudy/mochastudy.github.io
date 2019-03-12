@@ -6,5 +6,8 @@ article h3 {font-size:18px;line-height:35px;border-left:3px solid #4fb1ba;}
 article p, article ul, article ol, article li {font-size:15px;line-height:32px;}
 article img {width:100%;}
 header .message {font-size:14px;margin-left:0;}
-#_main > ul > li > a {border-color:#fff;}
+#_main > ul > li > a{border-color:#fff;}
+header > h1 > a{border-color:#fff !important;}
 #_main > ul > li > time {padding-left: 10px;}
+#_sidebar > div.sidebar-sticky > nav > ul > li > a{border:none;}
+#_sidebar > div.sidebar-sticky > div.sidebar-about > h2 > a{border:none;}
