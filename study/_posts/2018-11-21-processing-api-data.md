@@ -60,3 +60,7 @@ $keyma에 현재 가공된 xml 배열이 담겨 있으니 가정 먼저 쓰고, 
 
 ### 순서도
 ![순서도](http://mocha.dothome.co.kr/images/10-11.png)
+![구조](http://mocha.dothome.co.kr/images/10-12.png)
+
+### 실습하기
+[네이버 API 출력문을 가공해서 접근/출력하기](http://mocha.dothome.co.kr/practice/naverapi-practice2.php)
