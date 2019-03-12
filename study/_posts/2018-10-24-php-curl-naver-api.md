@@ -73,3 +73,6 @@ foreach($keyword_list[2] as $key){
 * 네이버 연관검색어가 업데이트 되고 나서 무조건 최대 10개의 검색어를 출력하지만, 10개가 없을 경우도 있다.
 * 단순한 반복문이라면 for을 사용하면 되지만, 배열의 경우 foreach를 사용하는 것이 훨씬 효율적이고 처리 속도도 빠르다. 위의 예시에는 배열이 존재하므로 배열 반복(foreach)를 사용.
 * foreach는 배열이 몇개가 있든지 그 배열의 갯수만큼 반복 해달라는 의미 
+
+## 실습
+[네이버 연관 검색어 화면에 출력하기](http://mocha.dothome.co.kr/practice/related-keywords.php)
