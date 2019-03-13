@@ -6,7 +6,7 @@ image:
 categories: project
 ---
 
-실습 링크: [mocha.dothome.co.kr/practice/blog-title.php](http://mocha.dothome.co.kr/practice/etc/naverapi_blog.php)
+링크: [mocha.dothome.co.kr/practice/blog-title.php](http://mocha.dothome.co.kr/practice/etc/naverapi_blog.php)
 
 ### 참고
 * [Youtube - Weather scraper PHP](https://www.youtube.com/watch?v=I0NmX5p5QaU)

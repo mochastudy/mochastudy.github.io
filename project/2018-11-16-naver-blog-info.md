@@ -6,7 +6,7 @@ image:
 categories: project
 ---
 
-[mocha.dothome.co.kr/practice/blog-title.php](http://mocha.dothome.co.kr/practice/etc/naverapi_blog.php)
+링크: [mocha.dothome.co.kr/practice/blog-title.php](http://mocha.dothome.co.kr/practice/etc/naverapi_blog.php)
 
 ### 참고
 * ([Lesson 6 - 바뀌는 키워드에 대한 네이버 연관검색어 추출하기](https://mochastudy.github.io/study/naver-api-related-keywords/)
