@@ -13,9 +13,10 @@ description: >
   프로젝트
 ---
 
-##In-class Practice
-181024: 네이버 검색어 연관검색어 추출하기
-181031: If문 패스워드 테스트
-181114: 고정 URL을 사용해서 네이버 검색 api 기본값 출력하기
-181121: 네이버 API 출력문을 가공해서 접근/출력하기
-181211: 네이버 문서수 출력하기
+<h3>In-class Practice</h3>
+<p>181024: <a href="http://mocha.dothome.co.kr/practice/related-keywords.php" target="_blank">네이버 검색어 연관검색어 추출하기</a><br/>
+181031: <a href="http://mocha.dothome.co.kr/practice/password-test.php" target="_blank">If문 패스워드 테스트</a><br/>
+181114: <a href="http://mocha.dothome.co.kr/practice/naverapi-practice1.php" target="_blank">고정 URL을 사용해서 네이버 검색 api 기본값 출력하기</a><br/>
+181121: <a href="http://mocha.dothome.co.kr/practice/naverapi-practice2.php" target="_blank">네이버 API 출력문을 가공해서 접근/출력하기</a><br/>
+181211: <a href="http://mocha.dothome.co.kr/practice/naverapi-practice3.php" target="_blank">네이버 문서수 출력하기</a>
+</p>
