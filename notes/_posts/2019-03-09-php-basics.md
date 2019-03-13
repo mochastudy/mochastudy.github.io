@@ -21,29 +21,25 @@ PHP 서버를 구동하려면 MAMP를 실행하거나, 터미널에서 'cd'를 �
 
 
 ## PHP 시작
-php 파일은 .php 확장자를 추가해야 함.
+php 파일의 확장자는 '.php'
 
 ### 화면에 출력하기
 ~~~php
 echo 'Hello World'
 ~~~
-<?php로 시작해야 함.
-100% php로 이루어진 파일이면 ?>로 닫아주지 않아도 된다. (good practice)
-하지만 php로 끝나는 파일이 아니면 ?>로 닫아주어야 함.
-
-echo 화면 출력
-string(문자열)은 '', ""로 감싼다
-모든 명령어는 ;로 끝낸다.
+* PHP 코드는 '<?php'로 시작해야 한다. 내용이 100% PHP로만 이루어진 파일이면 굳이 '?>'로 닫아주지 않아도 되지만, 다른 언어와 섞여있다면 PHP 부분을 닫아주어야 한다.
+* 모든 명령어는 ';'로 마친다.
+* 문자열은 '' 또는 ""로 감싸준다.
 
 
-## 변수
-변수를 선언하는 방법은 $을 붙이고 
+### 변수
+변수를 선언하기 위해서는 변수명 앞에 '$'를 붙인다.
 ~~~php
 $greeting = 'Hello World';
 echo $greeting; // Hello World
 ~~~
 
-
+주의할 점은, '' 안에는 변수를 포함할 수 없지만 "" 안에는 변수를 포함할 수 있다.
 ~~~php
 $name = 'Mocha';
 echo 'Hello, $name'; // Hello $name
@@ -51,12 +47,9 @@ echo "Hello, $name"; // Hello Mocha
 echo 'Hello, ' . $name; // Hello Mocha
 echo "Hello, {$name)"; // Hello Mocha
 ~~~
-''에는 변수를 넣을 수 없음
-""에는 변수를 넣을 수 있음
 
-## php와 html 함께 사용하기
-php는 웹 프로그래밍 언어이기 때문에 html과 함께 사용된다.
-
+### php와 html 함께 사용하기
+PHP는 웹프로그래밍 언어이기 때문에 HTML과 함께 사용된다.
 ~~~html
 <header>
     <h1>
@@ -68,13 +61,14 @@ php는 웹 프로그래밍 언어이기 때문에 html과 함께 사용된다.
 </header>
 ~~~
 
-localhost:8888?order=name
-order은 키, name은 값
+### 쿼리
+'localhost:8888?name=mocha'에서 order은 '키', name은 '값'이다. $_GET['name']을 사용하면 주소의 쿼리 부분이 바뀌는대로 그 값을 불러올 수 있으며, 아래와 같이 화면에 출력되는 부분도 실시간으로 바뀐다.
+
 ~~~html
 <header>
     <h1>
         <?php 
-            $name = $_GET['name']; // Jeff
+            $name = $_GET['name']; // Mocha
             echo "Hello, $name";
         ?>
     </h1>
@@ -82,22 +76,16 @@ order은 키, name은 값
     <h1><?php echo "Hello, $_GET['name']; ?></h1>
     <?= "Hello, $_GET['name']; ?>
         <?= "Hello, htmlspecialchars($_GET['name']); ?>
-
 </header>
 ~~~
-주소 부분에 있는 이름을 바꾸면 echo 되는 내용도 같이 바뀜
 
-보안 문제
-localhost:8888/?name=<a href="https://google.com">Mocha</a> 
-이런식으로 삽입하게 되면 페이지에도 반영이 된다.
-따라서, htmlspecialchars라는 function을 사용하게 된다.
-사용하면 html이 반영이 되는게 아니라 html entity로 변환하여 넣은 그대로를 화면에 출력한다.
 
-Separation of Concerns
-코드가 길어지면 복잡해지므로 PHP와 HTML을 목적에 따라 최대한 분리하는 것이 좋음.
-데이터 생성 파일과 화면에 출력하기 위한 html 파일
-index.view.php / index.tmpl.php (어떤 이름도 좋지만 be consistent!) 뷰또는 템플릿이라고 부름
+### 보안 문제
+'localhost:8888/?name=<a href="https://google.com">Mocha</a>'
+주소에 태그를 삽입하면 페이지에도 태그가 반영된다. 위의 경우, 화면에 출력되는 'Mocha'에 구글 링크가 걸리게 된다. 사이트의 이용자가 이를 스크립팅으로 악용할 수 있는데, htmlspecialchars라는 function을 사용하면 문자들을 HTML 엔티티로 변환해준다.
 
+### 코드 분리하기
+코드가 길어지면 HTML과 PHP 구분이 힘들어질 수 있으므로, 이 언어들을 최대한 분리하는 것이 좋다. 파일은 데이터 생성을 위한 index.php와 화면에 렌더링 하기 위한 index.view.php(이름은 마음대로 지어도 됨)로 나눌 수 있으며 렌더링을 위한 파일은 뷰 또는 템플릿으로 불린다.
 ~~~php
 <?php
     $greeting = 'Hello, World';
@@ -108,5 +96,3 @@ index.view.php / index.tmpl.php (어떤 이름도 좋지만 be consistent!) 뷰�
     <h1><?= $greeting ?></h1>
 </header>
 ~~~
-
-데이터를 위한 파일 하나와, 그 데이터를 화면에 렌더링 하는 파일 하나로 나뉘어짐
