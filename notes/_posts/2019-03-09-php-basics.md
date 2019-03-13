@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 190309 - PHP Basics
+title: PHP Basics - PHP 설치 및 기초 문법 
 description: >
 image: 
 categories: notes
