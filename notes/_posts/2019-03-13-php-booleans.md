@@ -2,10 +2,12 @@
 layout: post
 title: PHP Basics - Boolean 
 description: >
-image: 
 categories: notes
 ---
 
+Boolean과 조건문 알아보기.
+
+## Boolean
 ~~~php
 $task = [
     'title' =>  'PHP 공부하기',
@@ -53,3 +55,43 @@ $task = [
 <?= $task['completed'] ? '완료' : '미완료';>
 ~~~
 앞 부분의 조건을 만족한다면 '완료'가 출력되고, 만족하지 않는다면 '미완료' 출력.
+
+## 조건문 (Conditional)
+위에서 삼항 연산자를 사용한 조건문을 살펴봤는데, 기본적인 조건문의 모양은 아래와 같다.
+~~~php
+if (조건) {
+
+} else {
+
+}
+~~~
+
+~~~php
+if ($task['completed']) {
+    echo '완료'; // 값이 true면 '완료' 출력
+} else {
+    echo '미완료'; // 값이 false면 '미완료' 출력
+}
+~~~
+기본적인 조건문으로 다시 작성한 코드. 더 복잡한 코드라면 이 방법을 사용하지만, 간단한 문자열을 출력할 때는 삼항 연산자를 사용하면 코드가 더 간결해진다.
+
+~~~php
+<?php if ($task['completed']) : ?>
+    <span class="icon">&#9989;</span>
+<?php else : ?>
+    <span class="icon">Incomplete</span>
+<?php endif; ?>
+~~~
+foreach문과 마찬가지로 if문도 이런 식으로 작성할 수도 있음.
+
+### 값이 거짓인지 확인하기
+조건문에서 값이 거짓인지 확인하려면 '!(느낌표)'를 사용하면 된다. 
+~~~php
+if (!true) {
+    echo 'Incomplete';
+}
+
+if (!$task['completed']) {
+    echo 'Incomplete';
+}
+~~~
