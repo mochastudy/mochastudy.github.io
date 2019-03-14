@@ -21,5 +21,5 @@ description: >
 181211: <a href="http://mocha.dothome.co.kr/practice/naverapi-practice3.php" target="_blank">네이버 문서수 출력하기</a>
 </p>
 
-<h3 style="font-size:18px;line-height:35px;border-left:4px solid #4fb1ba;line-height:25px;padding-left:10px;">In-class Practice</h3>
+<h3 style="font-size:18px;line-height:35px;border-left:4px solid #4fb1ba;line-height:25px;padding-left:10px;">Assignment</h3>
 <p style="font-size:15px; line-height:32px;">181027: <a href="http://mocha.dothome.co.kr/practice/assignment1.php" target="_blank">숙제1</a></p>
