@@ -56,7 +56,7 @@ $task = [
 ~~~
 앞 부분의 조건을 만족한다면 '완료'가 출력되고, 만족하지 않는다면 '미완료' 출력.
 
-## 조건문 (Conditional)
+## 조건문 (Conditionals)
 위에서 삼항 연산자를 사용한 조건문을 살펴봤는데, 기본적인 조건문의 모양은 아래와 같다.
 ~~~php
 if (조건) {
@@ -95,3 +95,30 @@ if (!$task['completed']) {
     echo 'Incomplete';
 }
 ~~~
+
+## 함수 (Functions)
+지금까지의 강의에서 htmlspecialchars(), ucwords() 등 몇 가지 함수를 알아보고 PHP.NET의 doc에서 함수 리스트 또한 살펴봤다. 이미 PHP에 내장된 함수도 있지만, 직접 함수를 만들 수도 있다.
+
+$animals = ['dog', 'cat'];
+~~~php
+echo '<pre>';
+die(print_r($animals));
+echo '</pre>';
+~~~
+위의 print_r과 die는 배열을 가공할 때 자주 사용되는데, 테스트 할 때마다 일일이 치려면 번거롭기 때문에 function으로 만들어서 사용하면 간편하다.
+
+### 함수 선언하기
+~~~php
+require 'functions.php'; // functions 파일을 분리했다면 사용
+$animals = ['dog', 'cat'];
+
+function dd($val) {
+    echo '<pre>';
+    die(print_r($one, $two, $three));
+    echo '</pre>';
+}
+
+dd($animals);
+~~~
+dd는 die & dump의 약자로 흔히 쓰인다. $val은 어떤 이름을 넣어도 괜찮지만, 되도록이면 상황에 맞는 변수를 사용하면 코드를 읽기가 더 쉬워진다.
+
