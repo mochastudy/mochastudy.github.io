@@ -5,7 +5,7 @@ description: >
 categories: notes
 ---
 
-Boolean과 조건문 알아보기.
+Boolean과 조건문, 함수에 대해 알아보기.
 
 ## Boolean
 ~~~php
