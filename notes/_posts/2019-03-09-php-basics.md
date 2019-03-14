@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP Basics - PHP 설치 및 기초 문법 
+title: PHP 101 - PHP 설치 및 기초 문법 
 description: >
 image: 
 categories: notes

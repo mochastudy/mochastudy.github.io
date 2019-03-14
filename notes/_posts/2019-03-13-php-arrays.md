@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP Basics - 배열 & 연관배열
+title: PHP 101 - 배열 & 연관배열
 description: >
 image: 
 categories: notes
