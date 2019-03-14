@@ -5,120 +5,119 @@ description: >
 categories: notes
 ---
 
-Boolean과 조건문 알아보기.
+PHP와 함께 가장 많이 사용되는 데이터베이스 중 하나인 MySQL 설치법과 사용법 간단히 살펴보기.
 
-## Boolean
-~~~php
-$task = [
-    'title' =>  'PHP 공부하기',
-    'due'   =>  '오늘',
-    'assigned_to' => '모카',
-    'completed' => false // Boolean 사용 (true/false)
-]
+
+## MySQL 시작
+MySQL은 세계에서 가장 많이 쓰이는 오픈 소스 관계형 데이터베이스 관리 시스템이다.
+
+## MYSQL 설치 및 실행하기
 ~~~
-이 코드에서는 'completed'에 false(Boolean)이 사용되었다. Boolean은 true와 false 두 가지이며, 반복문 등 다양하게 사용된다. 'yes'나 'no'를 사용하지 않는 이유는 둘 다 문자열이며 true 값을 가지고 있기 때문이다.
-
-~~~php
-<ul>
-    <?php foreach($task as $heading => $value) : ?>
-        <li>
-            <strong><?= $heading; ?>: </strong> <?= $value; ?>
-        </li>
-    <?php endforeach ?>
-</ul>
+iMac:~ mocha$ brew install mysql // homebrew를 통해 mysql 설치하기
+iMac:~ mocha$ mysql.server start // mysql 서버 구동하기
+iMac:~ mocha$ mysql -uroot // mysql 시작
+iMac:~ mocha$ mysql -uroot -ppassword // 비밀번호가 있으면 뒤에 -ppassword 추가
 ~~~
 
-### 단어의 첫 번째 레터 대문자로 바꾸기
-배열에서 직접 문자를 변경해도 되지만, 외부에서 가져온 데이터의 경우에는 직접 변경할 수 없다. 이럴때는 PHP의 여러 함수들을 유용하게 사용할 수 있다. 
-~~~php
-<strong><?= ucwords($heading); ?>: </strong> <?= $value; ?>
-<?= ucwords('Hello my name is mocha'); ?> // Hello My Name Is Mocha
+![데이터베이스](http://mocha.dothome.co.kr/images/190313-1.png)
+mysql -uroot 명령어를 실행하면 위와 같이 'mysql>'가 뜬다.
+
+### MySQL 종료하기
+'ctr' + 'd'로 종료한다.
+
+## MySQL 명령어
+SQL은 PHP와는 다른 언어로 문법이 다르기 때문에 따로 공부해야 한다. 아래 자료들을 참고하여 시간 날때마다 틈틈히 보고 연습해두도록 하자.
+* [TCPSchool](http://tcpschool.com/mysql/mysql_basic_syntax)
+* [OpenTutorials](https://opentutorials.org/course/195)
+* [HackerRank](https://www.hackerrank.com/domains/sql)
+* [w3resource](https://www.w3resource.com/sql-exercises/)
+* [w3schools](https://www.w3schools.com/sql/default.asp)
+* [SQLBolt](https://sqlbolt.com/)
+* [SQLZoo](https://sqlzoo.net/)
+* [Codecademy](https://www.codecademy.com/learn/learn-sql)
+* [Youtube - MySQL Beginner Tutorial](https://www.youtube.com/watch?v=nN4Kjdverzs&t=45s)
+
+### 데이터베이스 목록 보기
+~~~
+mysql> show databases;
 ~~~
 
-[ucwords](http://php.net/manual/en/function.ucwords.php)는 'Uppercase Words'를 줄인 것으로, 각 단어의 첫 번째 레터를 대문자로 바꿔주는 기능이다.
-
-더 많은 PHP 함수에 대해 알고 싶다면, stackoverflow나 php.net 도큐멘트를 참고하면 된다. 모든 함수를 다 알고 있어야 하는건 아니지만, 자주 쓰이는 것은 어느정도 익혀두는 것이 좋다.
-
-### Ke 부분을 좀 더 상세하게 출력하기
-위에서 본 것과 같이 키와 값을 모두 반복문을 사용해서 출력해도 되지만, 키를 다르게 입력하고자 하는 경우에는 HTML과 PHP를 섞어서 사용하면 데이터를 조금 더 자유롭게 커스터마이즈 할 수 있다.
-
-~~~php
-<ul>
-    <li><strong>Name: </strong> <?= $task['title']; ?></li>
-    <li><strong>Due Date: </strong> <?= $task['due']; ?></li>
-    <li><strong>Person Responsible: </strong> <?= $task['assigned_to']; ?></li>
-    <li><strong>Status: </strong> <?= $task['completed']; ?></li>
-</ul>
+### 데이터베이스 생성하기
 ~~~
-이 코드에서 마지막 줄 'Status: ' 부분은 값이 출력되지 않는데, 값을 출력하기 위해 아래와 같이 삼항 연산자(Ternary Operator)를 사용해서 조건을 추가해보자.
+mysql> create database mytodo
 ~~~
-<?= $task['completed'] ? '완료' : '미완료';>
+데이터베이스는 테이블로 이루어져 있다. 테이블은 엑셀의 스프레드시트와 비슷한 개념. 위의 예시에서는 'mytodo'라는 이름의 데이터베이스를 생성한다.
+
+### 데이터베이스 열기
 ~~~
-앞 부분의 조건을 만족한다면 '완료'가 출력되고, 만족하지 않는다면 '미완료' 출력.
-
-## 조건문 (Conditionals)
-위에서 삼항 연산자를 사용한 조건문을 살펴봤는데, 기본적인 조건문의 모양은 아래와 같다.
-~~~php
-if (조건) {
-
-} else {
-
-}
+mysql> use mytodo;
 ~~~
+디렉토리(폴더)를 여는 것 같은 개념이라고 생각하면 된다. 
 
-~~~php
-if ($task['completed']) {
-    echo '완료'; // 값이 true면 '완료' 출력
-} else {
-    echo '미완료'; // 값이 false면 '미완료' 출력
-}
+### 테이블 목록 보기
 ~~~
-기본적인 조건문으로 다시 작성한 코드. 더 복잡한 코드라면 이 방법을 사용하지만, 간단한 문자열을 출력할 때는 삼항 연산자를 사용하면 코드가 더 간결해진다.
-
-~~~php
-<?php if ($task['completed']) : ?>
-    <span class="icon">&#9989;</span>
-<?php else : ?>
-    <span class="icon">Incomplete</span>
-<?php endif; ?>
+mysql> show tables;
 ~~~
-foreach문과 마찬가지로 if문도 이런 식으로 작성할 수도 있음.
+데이터베이스를 처음 생성하면 테이블이 없어서 생성해야 한다.
 
-### 값이 거짓인지 확인하기
-조건문에서 값이 거짓인지 확인하려면 '!(느낌표)'를 사용하면 된다. 
-~~~php
-if (!true) {
-    echo 'Incomplete';
-}
+### 테이블 생성하기
+~~~
+mysql> create table todos (description, completed); // Syntax 에러
+mysql> create table todos (description text, completed boolean);
+~~~
+첫 번째 명령어에서 에러가 나는 이유는, description과 completed에 대해 어떤 데이터 형태를 사용할 것인지 입력하지 않았기 때문. 따라서, 두 번째 명령어에서는 description에는 text 타입, 그리고 completed에는 boolean 타입을 넣어줬다.
 
-if (!$task['completed']) {
-    echo 'Incomplete';
-}
+### 테이블 내용 보기
+~~~
+mysql> describe todos;
+~~~
+![테이블](http://mocha.dothome.co.kr/images/190313-2.png)
+여기서 'Null' 값이 'yes'라는 것은, description과 completed의 값을 설정하지 않아도 된다는 것이다. 필수로 입력하는 값이 아니라는 것. 따라서, 테이블을 생성할 때 이 값까지 설정해주어야 한다.
+
+### 테이블 지우기
+~~~
+mysql> drop table todos;
 ~~~
 
-## 함수 (Functions)
-지금까지의 강의에서 htmlspecialchars(), ucwords() 등 몇 가지 함수를 알아보고 PHP.NET의 doc에서 함수 리스트 또한 살펴봤다. 이미 PHP에 내장된 함수도 있지만, 직접 함수를 만들 수도 있다.
-
-$animals = ['dog', 'cat'];
-~~~php
-echo '<pre>';
-die(print_r($animals));
-echo '</pre>';
+### 테이블에 Null 값 포함해서 생성하기
 ~~~
-위의 print_r과 die는 배열을 가공할 때 자주 사용되는데, 테스트 할 때마다 일일이 치려면 번거롭기 때문에 function으로 만들어서 사용하면 간편하다.
-
-### 함수 선언하기
-~~~php
-require 'functions.php'; // functions 파일을 분리했다면 사용
-$animals = ['dog', 'cat'];
-
-function dd($val) {
-    echo '<pre>';
-    die(print_r($one, $two, $three));
-    echo '</pre>';
-}
-
-dd($animals);
+mysql> create table todos (description text NOT NULL, completed boolean NOT NULL);
 ~~~
-dd는 die & dump의 약자로 흔히 쓰인다. $val은 어떤 이름을 넣어도 괜찮지만, 되도록이면 상황에 맞는 변수를 사용하면 코드를 읽기가 더 쉬워진다.
+![데이터베이스](http://mocha.dothome.co.kr/images/190313-3.png)
 
+### id 설정하기
+~~~
+mysql> create table todos (id integer PRIMARY KEY AUTO_INCREMENT,description text NOT NULL, completed boolean NOT NULL);
+~~~
+id는 데이터에 대한 고유 번호로, 이 예시에서는 자동 증가(Auto Increment)하는 정수(integer) 형태이다. Description은 같은 내용으로 중복될 수 있어서 구분하기가 힘든데, 이를 구분 가능하게 하는 것이 ID Primary Key이다.
+![테이블](http://mocha.dothome.co.kr/images/190313-4.png)
+
+
+### 테이블에 데이터 추가하기
+~~~
+mysql> insert into todos (description, completed) values('포스팅 하기', false);
+~~~
+
+### 테이블 데이터 보기
+~~~
+mysql> select * from todos;
+~~~
+![데이터](http://mocha.dothome.co.kr/images/190313-5.png)
+
+
+## MySQL GUI 툴
+터미널에서 MySQL 명령어를 사용하다보면 아무래도 GUI 환경보다는 불편하고 번거로울 수 있다. 하지만, 명령어를 익혀두는 것도 도움이 되니, 후에 프로그램을 사용할거라면 터미널에서 명령어들을 충분히 연습해서 익히면 프로그램으로 넘어가도록 하자. 맥용 프로그램을 몇 가지 추리자면 아래와 같다.
+* SequelPro
+* Querious
+* Navicat
+
+
+## 간단 정리
+~~~
+mysql> show databases // 데이터베이스 목록
+mysql> show tables // 테이블 목록 보기
+mysql> use databases // 데이터베이스 선택
+mysql> create table // 테이블 생성
+mysql> drop table todos; // 테이블 삭제
+mysql> insert into tablename // 테이블에 데이터 추가하기
+~~~
