@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP 101 - Booleans
+title: PHP 101 - Booleans, 조건문, 함수
 description: >
 categories: notes
 ---
