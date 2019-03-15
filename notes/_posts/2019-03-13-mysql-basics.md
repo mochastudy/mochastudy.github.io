@@ -121,3 +121,9 @@ mysql> create table // 테이블 생성
 mysql> drop table todos; // 테이블 삭제
 mysql> insert into tablename // 테이블에 데이터 추가하기
 ~~~
+
+### 추가 (190315)
+~~~
+mysql> SELECT USER(); // 유저네임 확인
+mysql> SELECT DATABASE(); // 현재 사용중인 데이터베이스 확인
+mysql> status; // 서버 정보 보기
