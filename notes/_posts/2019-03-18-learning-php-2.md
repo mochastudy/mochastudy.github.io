@@ -5,7 +5,7 @@ description: >
 image: 
 categories: notes
 ---
-Learning PHP, MySQL & JavaScript
+**Learning PHP, MySQL & JavaScript**<br/>
 Chapter 2. Setting Up a Development Server (-p.33)
 
 ## Why a Development Server?
