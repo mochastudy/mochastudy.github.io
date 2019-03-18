@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning PHP, MySQL & JavaScript (CH 1)
+title: [Learning PHP] 1. Intro to Dynamic Web Content
 description: >
 image: 
 categories: notes
