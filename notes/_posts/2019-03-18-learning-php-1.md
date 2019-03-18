@@ -112,3 +112,11 @@ After Oracle purchased Sun Microsystems (the owners of MySQL), the community bec
 7. Optionally, an improved version of this process could even look at the username requested by the user and suggest an alternative that is currently available.
 
 ## Questions
+1. What four components (at the minimum) are needed to create a fully dynamic web page?
+2. What does HTML stand for?
+3. Why does the name MySQL contains the letters SQL?
+4. PHP and JavaScript are both programming languages that generate dynamic results for web pages. What is their main difference, and why would you use both of them?
+5. What does CSS stand for?
+6. List three major new elements introduced in HTML5.
+7. If you encounter a bug (which is rare) in one of the open source tools, how do you think you could get it fixed?
+8. Why is a framework such as jQuery Mobile so important for developing modern websites and web apps?
