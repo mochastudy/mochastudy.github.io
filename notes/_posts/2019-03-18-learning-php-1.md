@@ -59,7 +59,7 @@ After Oracle purchased Sun Microsystems (the owners of MySQL), the community bec
 
 ### Using PHP
 * With .php extension, they have instant access to the scripting language.
-* <pre><?php></pre> tells the web server to allow the PHP program to interpret all the code up to the <pre>?></pre>.
+* ₩<?php>₩ tells the web server to allow the PHP program to interpret all the code up to the ₩?>₩.
 * Outside of these opening and closing tag, everything is sent to the client as direct HTML.
 * With PHP, developers have a scripting language that is incredibly speedy and integrates seamlessly with HTML markup.
 
@@ -79,8 +79,8 @@ After Oracle purchased Sun Microsystems (the owners of MySQL), the community bec
 
 ### Using HTML5
 * HTML5's developement began as long ago as 2004, when the first draft was drawn up by the Mozilla Foundation and Opera Software. In 2013, the final draft was submitted to the World Wide Web Consortium (W3C), the international governing body for web standards.
-* New features in HTML5 include <pre><audio>, <video>, <canvas></pre>...
-* With previous versions of HTML, closing / character was to be included in the self-closing tags, but now I can use either <pre><br></pre> or <pre><br/></pre>.
+* New features in HTML5 include ₩<audio>, <video>, <canvas>₩...
+* With previous versions of HTML, closing / character was to be included in the self-closing tags, but now I can use either ₩<br>₩ or ₩<br/>₩.
 
 ### Apache Web Server
 * In addition to PHP, MySQL, JavaScript, CSS, and HTML5, there's also the web server (In this book, the Apache Web Server).
