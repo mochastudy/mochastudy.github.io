@@ -6,7 +6,8 @@ image:
 categories: notes
 ---
 
-[Learning PHP, MySQL & JavaScript] Chapter 1. Introduction to Dynamic Web Content (-15p)
+Learning PHP, MySQL & JavaScript
+Chapter 1. Introduction to Dynamic Web Content (-15p)
 
 ## Internet History
 * Early 1910s, CERN were producing incredible amounts of data hard to distribute to the scientists around the world.
