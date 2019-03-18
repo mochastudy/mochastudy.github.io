@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Learning PHP, MySQL & JavaScript (-)
+title: Learning PHP, MySQL & JavaScript (CH 1)
 description: >
 image: 
 categories: notes
 ---
 
-Chapter 1. Introduction to Dynamic Web Content
+Chapter 1. Introduction to Dynamic Web Content (-15p)
 
 ## Internet History
 * Early 1910s, CERN were producing incredible amounts of data hard to distribute to the scientists around the world.
@@ -51,6 +51,7 @@ For dynamic web pages, the procedure is little more involved (including PHP, MyS
 10. THE PHP interpreter returns the result of the executed PHP code, along with the results from the MySQL database, to the web server.
 11. The web server returns the page to the requesting client, which displays it.
 
+## Components
 ### MariaDB: The MySQL Clone
 After Oracle purchased Sun Microsystems (the owners of MySQL), the community became wary that MySQL might not remain fully open source, so MariaDB was forked from it to keep it free under the GNU GPL. 
 * Developed by some of the original developers of MySQL. 
@@ -58,12 +59,12 @@ After Oracle purchased Sun Microsystems (the owners of MySQL), the community bec
 
 ### Using PHP
 * With .php extension, they have instant access to the scripting language.
-* '<?php' tells the web server to allow the PHP program to interpret all the code up to the '?>'.
+* <pre><?php></pre> tells the web server to allow the PHP program to interpret all the code up to the <pre>?></pre>.
 * Outside of these opening and closing tag, everything is sent to the client as direct HTML.
 * With PHP, developers have a scripting language that is incredibly speedy and integrates seamlessly with HTML markup.
 
 ### Using MySQL
-* In the early days, many sites used flat text files to store data such as usernames and passwords -> This can cause problems if the file wasn't correctedly locked against corruption. Also, this can get so big to manage. -> Need for relational databases with structured querying
+* In the early days, many sites used flat text files to store data such as usernames and passwords. This can cause problems if the file wasn't correctedly locked against corruption. Also, this can get so big to manage. -> Need for relational databases with structured querying
 * MySQL is a robust and exceptionally fast database management system that uses English-like commands.
 * There are a lot of things you can do with MySQL (combining related data sets to bring related pieces of info together, ask for result in different orders, etc.).
 
@@ -99,9 +100,9 @@ After Oracle purchased Sun Microsystems (the owners of MySQL), the community bec
 * JavaScript handles interactivity and also talk with PHP code whenever it need to update something.
 * HTML5 manages the structure of the website and the new features of HTML5(canvas, audio, video, etc.) can help you make your web pages highly dynamic, interactive, and multimedia-packed.
 
-### Wrapping up
+## Wrapping up
 ![web](http://mocha.dothome.co.kr/images/190318-php-3.png)
-1. Server outputs the HTMl to create the web form
+1. Server outputs the HTML to create the web form
 2. At the same time, the server attaches some JavaScript to the HTML to monitor the username input box and check for two things: whether some text has been typed into it, and whether the input has been deselected because the user has clicked on another input box.
 3. Once the text has been entered and the field deselected, in the background the JaVascript code passes the username that was entered back to a PHP script on the web server and awaits a response.
 4. The web server looks up the username and replied back to the JavaScript regarding whether that name has already been taken.
