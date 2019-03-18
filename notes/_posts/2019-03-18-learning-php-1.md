@@ -77,10 +77,10 @@ After Oracle purchased Sun Microsystems (the owners of MySQL), the community bec
 ### Using CSS
 * CSS3 offers a level of dynamic intereactively previously supported only by JavaScript (Annimated transitions and transformations...).
 
-### And Then There's HTML5
+### Using HTML5
 * HTML5's developement began as long ago as 2004, when the first draft was drawn up by the Mozilla Foundation and Opera Software. In 2013, the final draft was submitted to the World Wide Web Consortium (W3C), the international governing body for web standards.
-* New features in HTML5 include <audio>, <video>, <canvas>...
-* With previous versions of HTML, closing / character was to be included in the self-closing tags, but now I can use either <br> or <br/>.
+* New features in HTML5 include <pre><audio>, <video>, <canvas></pre>...
+* With previous versions of HTML, closing / character was to be included in the self-closing tags, but now I can use either <pre><br></pre> or <pre><br/></pre>.
 
 ### Apache Web Server
 * In addition to PHP, MySQL, JavaScript, CSS, and HTML5, there's also the web server (In this book, the Apache Web Server).
