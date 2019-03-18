@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Learning PHP] 1. Intro to Dynamic Web Content
+title: Learning PHP - 1. Intro to Dynamic Web Content
 description: >
 image: 
 categories: notes
