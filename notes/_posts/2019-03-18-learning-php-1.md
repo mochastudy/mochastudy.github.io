@@ -6,7 +6,7 @@ image:
 categories: notes
 ---
 
-Learning PHP, MySQL & JavaScript<br/>
+**Learning PHP, MySQL & JavaScript**<br/>
 Chapter 1. Introduction to Dynamic Web Content (-15p)
 
 ## Internet History
