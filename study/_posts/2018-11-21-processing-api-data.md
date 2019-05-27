@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 10 - 네이버 OPEN API 블로그 검색 결과 깔끔하게 가공하기
-categories: study
+categories: project2
 ---
 
 이번 강의에서는 지난 강의에서 출력한 네이버 블로그 데이터를 깔끔하게 가공해 출력해본다.

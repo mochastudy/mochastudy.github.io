@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 7 - 웹페이지 처리 구조와 If문 구조
-categories: study
+categories: project2
 ---
 
 이번 강의에서는 드용님이 주신 샘플 코드를 바탕으로, 웹페이지가 화면에 보여지기까지의 처리 구조와 if문 구조에 대해 알아본다.

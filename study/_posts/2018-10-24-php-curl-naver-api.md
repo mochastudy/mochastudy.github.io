@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 5 - PHP cURL & 네이버 API 이용 방법 (+ 배열과 foreach) 
-categories: study
+categories: project2
 ---
 
 이 강의에서는 PHP의 cURL 기능과 네이버 API를 이용한 연관 검색어 추출 방법, 그리고 배열과 foreach에 대해서 살펴본다.

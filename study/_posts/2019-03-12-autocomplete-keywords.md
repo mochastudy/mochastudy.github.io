@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 13 - 정규식 없이 검색엔진 자동완성어 추출하기 (네이버 예시)
-categories: study
+categories: project2
 ---
 
 이번 강의에서는 정규식 없이 네이버, 다음, 구글, 줌 등의 검색엔진에서 자동완성어 추출하는 방법을 알아본다.

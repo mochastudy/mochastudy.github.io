@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 8 - 네이버 개발자 센터 가입 및 애플리케이션 등록
-categories: study
+categories: project2
 ---
 
 이번 강의에서는 네이버 개발자 센터에 가입하고 애플리케이션을 등록해본다.

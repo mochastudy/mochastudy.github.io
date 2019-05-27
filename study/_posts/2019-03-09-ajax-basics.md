@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 12 - AJAX 시작하기
-categories: study
+categories: project2
 ---
 
 이번 강의에서는 AJAX에 대해 알아본다.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 9 - 네이버 검색 API 기본 설명서 살펴보기
-categories: study
+categories: project2
 ---
 
 이번 강의에서는 네이버 검색 API 기본 설명서를 살펴보고 간단하게 실습 해본다.

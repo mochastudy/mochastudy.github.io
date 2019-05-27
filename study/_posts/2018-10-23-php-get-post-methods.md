@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 4 - PHP 기초 문법 (Form, POST & GET) 
-categories: study
+categories: project2
 ---
 
 이 강의에서는 html form 태그와 GET, POST 방식 및 사용 방법에 대해 알아본다.

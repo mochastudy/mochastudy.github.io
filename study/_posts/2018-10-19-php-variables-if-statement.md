@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 3 - PHP 기초 문법 (변수와 if문) 
-categories: study
+categories: project2
 ---
 
 이 강의에서는 변수의 정의와 PHP에서 변수 선언하는 방법, 그리고 if문에 대해 알아본다.

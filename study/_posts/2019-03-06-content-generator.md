@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 11 - PHP 파일 관련 명령어 알아보기 & 콘텐츠 발행기 만들기
-categories: study
+categories: project2
 ---
 
 이번 강의에서는 데이터베이스나 필터를 사용하지 않고 PHP로만 콘텐츠 생성기를 만드는 법을 배워본다. PHP가 새로운 파일을 생성해주고 그 파일의 경로로 접근하여 열람하는 구조.

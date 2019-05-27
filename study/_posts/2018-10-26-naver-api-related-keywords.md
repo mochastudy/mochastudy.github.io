@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lesson 6 - 바뀌는 키워드에 대한 네이버 연관 검색어 추출하기
-categories: study
+categories: project2
 ---
 
 이번 강의에서는 지난 강의(고정 키워드로 연관 검색어 추출)에 이어, 입력하는 키워드에 따라 연관 검색어가 다르게 출력되도록 해본다.

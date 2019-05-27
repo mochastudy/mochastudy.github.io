@@ -3,7 +3,7 @@ layout: post
 title: Lesson 1 - 서버 언어(PHP)와 클라이언트 언어(HTML) 
 description: >
 image: 
-categories: study
+categories: project2
 ---
 
 이 강의에서는 서버 언어와 클라이언트의 종류와 차이점에 대해 알아본다.
