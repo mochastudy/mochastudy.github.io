@@ -47,11 +47,11 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Project 2
+  - title:             프로젝트2
     url:               /project2/
-  - title:             Project 3
+  - title:             프로젝트3
     url:               /project3/
-  - title:             Practice
+  - title:             연습
     url:               /practice/
 
 # Add links to the footer.
