@@ -47,8 +47,8 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             스터디
-    url:               /study/
+  - title:             프로젝트2
+    url:               /project2/
   - title:             데일리
     url:               /notes/
   - title:             프로젝트
