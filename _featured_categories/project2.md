@@ -3,7 +3,7 @@
 layout: list
 
 # The title of the tag's page.
-title: 프로젝트2
+title: Project 2
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
 slug: project2
