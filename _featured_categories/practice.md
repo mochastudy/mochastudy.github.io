@@ -3,14 +3,14 @@
 layout: list
 
 # The title of the tag's page.
-title: Project
+title: Practice
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: project
+slug: practice
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  프로젝트
+  연습
 ---
 
 <h3 style="font-size:18px;line-height:35px;border-left:4px solid #4fb1ba;line-height:25px;padding-left:10px;">In-class Practice</h3>
